@@ -48,7 +48,7 @@ const router = async (port) => {
 
     app.get('/search', cors(), async (req, res) => {
         let search = req.query.name;
-        let results = await auctionTable.findAll({ where: { name: search }, raw: true });
+        let results = await auctionTable.findAll({ where: { name: { [Sequelize.Op.substring]: search } }, raw: true });
         results = results.map(item => {
             return {
                 item: item.item_id,
@@ -64,6 +64,7 @@ const router = async (port) => {
             }
         })
         .sort((a, b) => { return a.buyout - b.buyout });
+        if (results.length > config.limit) results = [];
         res.json({ auctions: results });
     });
 
