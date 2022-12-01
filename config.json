@@ -1,0 +1,206 @@
+{
+    "token": "token_here",
+    "regions": [
+        "us",
+        "eu"
+    ],
+    "base": "api.blizzard.com/data/wow",
+    "realms": {
+        "us": {
+            "atiesh": {
+                "id": 4372,
+                "name": "Atiesh"
+            },
+            "myzrael": {
+                "id": 4373,
+                "name": "Myzrael"
+            },
+            "old-blanchy": {
+                "id": 4374,
+                "name": "Old Blanchy"
+            },
+            "azuresong": {
+                "id": 4376,
+                "name": "Azuresong"
+            },
+            "mankrik": {
+                "id": 4384,
+                "name": "Mankrik"
+            },
+            "pagle": {
+                "id": 4385,
+                "name": "Pagle"
+            },
+            "ashkandi": {
+                "id": 4387,
+                "name": "Ashkandi"
+            },
+            "westfall": {
+                "id": 4388,
+                "name": "Westfall"
+            },
+            "whitemane": {
+                "id": 4395,
+                "name": "Whitemane"
+            },
+            "faerlina": {
+                "id": 4408,
+                "name": "Faerlina"
+            },
+            "grobbulus": {
+                "id": 4647,
+                "name": "Grobbulus"
+            },
+            "bloodsail-buccaneers": {
+                "id": 4648,
+                "name": "Bloodsail Buccaneers"
+            },
+            "remulos": {
+                "id": 4667,
+                "name": "Remulos"
+            },
+            "arugal": {
+                "id": 4669,
+                "name": "Arugal"
+            },
+            "yojamba": {
+                "id": 4670,
+                "name": "Yojamba"
+            },
+            "skyfury": {
+                "id": 4725,
+                "name": "Skyfury"
+            },
+            "sulfuras": {
+                "id": 4726,
+                "name": "Sulfuras"
+            },
+            "windseeker": {
+                "id": 4727,
+                "name": "Windseeker"
+            },
+            "benediction": {
+                "id": 4728,
+                "name": "Benediction"
+            },
+            "earthfury": {
+                "id": 4731,
+                "name": "Earthfury"
+            },
+            "maladath": {
+                "id": 4738,
+                "name": "Maladath"
+            },
+            "angerforge": {
+                "id": 4795,
+                "name": "Angerforge"
+            },
+            "eranikus": {
+                "id": 4800,
+                "name": "Eranikus"
+            }
+        },
+        "eu": {
+            "everlook": {
+                "id": 4440,
+                "name": "Everlook"
+            },
+            "auberdine": {
+                "id": 4441,
+                "name": "Auberdine"
+            },
+            "lakeshire": {
+                "id": 4442,
+                "name": "Lakeshire"
+            },
+            "chromie": {
+                "id": 4452,
+                "name": "Chromie"
+            },
+            "pyrewood-village": {
+                "id": 4453,
+                "name": "Pyrewood Village"
+            },
+            "mirage-raceway": {
+                "id": 4454,
+                "name": "Mirage Raceway"
+            },
+            "razorfen": {
+                "id": 4455,
+                "name": "Razorfen"
+            },
+            "nethergarde-keep": {
+                "id": 4456,
+                "name": "Nethergarde Keep"
+            },
+            "sulfuron": {
+                "id": 4464,
+                "name": "Sulfuron"
+            },
+            "golemagg": {
+                "id": 4465,
+                "name": "Golemagg"
+            },
+            "patchwerk": {
+                "id": 4466,
+                "name": "Patchwerk"
+            },
+            "firemaw": {
+                "id": 4467,
+                "name": "Firemaw"
+            },
+            "flamegor": {
+                "id": 4474,
+                "name": "Flamegor"
+            },
+            "gehennas": {
+                "id": 4476,
+                "name": "Gehennas"
+            },
+            "venoxis": {
+                "id": 4477,
+                "name": "Venoxis"
+            },
+            "hydraxian-waterlords": {
+                "id": 4678,
+                "name": "Hydraxian Waterlords"
+            },
+            "mograine": {
+                "id": 4701,
+                "name": "Mograine"
+            },
+            "amnennar": {
+                "id": 4703,
+                "name": "Amnennar"
+            },
+            "ashbringer": {
+                "id": 4742,
+                "name": "Ashbringer"
+            },
+            "transcendence": {
+                "id": 4745,
+                "name": "Transcendence"
+            },
+            "earthshaker": {
+                "id": 4749,
+                "name": "Earthshaker"
+            },
+            "giantstalker": {
+                "id": 4811,
+                "name": "Giantstalker"
+            },
+            "mandokir": {
+                "id": 4813,
+                "name": "Mandokir"
+            },
+            "thekal": {
+                "id": 4815,
+                "name": "Thekal"
+            },
+            "jindo": {
+                "id": 4816,
+                "name": "Jin'do"
+            }
+        }
+    }
+}
