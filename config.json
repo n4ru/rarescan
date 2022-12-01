@@ -1,8 +1,8 @@
 {
     "token": "TOKEN",
+    "limit": 100,
     "regions": [
-        "us",
-        "eu"
+        "us"
     ],
     "base": "api.blizzard.com/data/wow",
     "realms": {
@@ -122,133 +122,7 @@
                 "slug": "eranikus",
                 "name": "Eranikus"
             }
-        },
-        "eu": {
-            "4440": {
-                "id": 4440,
-                "slug": "everlook",
-                "name": "Everlook"
-            },
-            "4441": {
-                "id": 4441,
-                "slug": "auberdine",
-                "name": "Auberdine"
-            },
-            "4442": {
-                "id": 4442,
-                "slug": "lakeshire",
-                "name": "Lakeshire"
-            },
-            "4452": {
-                "id": 4452,
-                "slug": "chromie",
-                "name": "Chromie"
-            },
-            "4453": {
-                "id": 4453,
-                "slug": "pyrewood-village",
-                "name": "Pyrewood Village"
-            },
-            "4454": {
-                "id": 4454,
-                "slug": "mirage-raceway",
-                "name": "Mirage Raceway"
-            },
-            "4455": {
-                "id": 4455,
-                "slug": "razorfen",
-                "name": "Razorfen"
-            },
-            "4456": {
-                "id": 4456,
-                "slug": "nethergarde-keep",
-                "name": "Nethergarde Keep"
-            },
-            "4464": {
-                "id": 4464,
-                "slug": "sulfuron",
-                "name": "Sulfuron"
-            },
-            "4465": {
-                "id": 4465,
-                "slug": "golemagg",
-                "name": "Golemagg"
-            },
-            "4466": {
-                "id": 4466,
-                "slug": "patchwerk",
-                "name": "Patchwerk"
-            },
-            "4467": {
-                "id": 4467,
-                "slug": "firemaw",
-                "name": "Firemaw"
-            },
-            "4474": {
-                "id": 4474,
-                "slug": "flamegor",
-                "name": "Flamegor"
-            },
-            "4476": {
-                "id": 4476,
-                "slug": "gehennas",
-                "name": "Gehennas"
-            },
-            "4477": {
-                "id": 4477,
-                "slug": "venoxis",
-                "name": "Venoxis"
-            },
-            "4678": {
-                "id": 4678,
-                "slug": "hydraxian-waterlords",
-                "name": "Hydraxian Waterlords"
-            },
-            "4701": {
-                "id": 4701,
-                "slug": "mograine",
-                "name": "Mograine"
-            },
-            "4703": {
-                "id": 4703,
-                "slug": "amnennar",
-                "name": "Amnennar"
-            },
-            "4742": {
-                "id": 4742,
-                "slug": "ashbringer",
-                "name": "Ashbringer"
-            },
-            "4745": {
-                "id": 4745,
-                "slug": "transcendence",
-                "name": "Transcendence"
-            },
-            "4749": {
-                "id": 4749,
-                "slug": "earthshaker",
-                "name": "Earthshaker"
-            },
-            "4811": {
-                "id": 4811,
-                "slug": "giantstalker",
-                "name": "Giantstalker"
-            },
-            "4813": {
-                "id": 4813,
-                "slug": "mandokir",
-                "name": "Mandokir"
-            },
-            "4815": {
-                "id": 4815,
-                "slug": "thekal",
-                "name": "Thekal"
-            },
-            "4816": {
-                "id": 4816,
-                "slug": "jindo",
-                "name": "Jin'do"
-            }
         }
-    }
+    },
+    "lastscan": 1669885440506
 }

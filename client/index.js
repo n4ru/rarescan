@@ -2,6 +2,7 @@ let input = document.getElementById('search');
 let host = "http://localhost:8081/search?name=";
 let typingInterval = 1000;
 let timer;
+
 input.addEventListener('keypress', async () => {
     clearInterval(timer);
     timer = setTimeout(doneTyping, typingInterval)
@@ -19,7 +20,7 @@ let table = `<tr><th width="256px">Item</th><th width="64px">Bid</th><th width="
 let addRow = (item, bid, buyout, qty, realm, region, expiration, faction) => {
     let row = document.createElement('tr');
     row.innerHTML =
-        `<tr><td>${item}</td><td>${bid}</td><td>${buyout}</td><td>${qty}</td><td>${realm}</td><td>${region}</td><td>${expiration}</td><td>${faction}</td></tr>`;
+        `<tr><td>${item}</td><td>${bid}</td><td>${buyout}</td><!--td>${qty}</td--><td>${realm}</td><!--td>${region}</td--><td>${expiration}</td><td>${faction}</td></tr>`;
     document.getElementById('results').appendChild(row);
 }
 
@@ -40,7 +41,7 @@ let doneTyping = async () => {
     // Iterate over the results and populate the table
     let table = document.getElementById('results');
     table.innerHTML = "";
-    addRow('Item', 'Bid', 'Buyout', 'Quantity', 'Realm', 'Region', 'Expiration', 'Faction');
+    if (auctions.length > 0) addRow('Item', 'Bid', 'Buyout', 'Quantity', 'Realm', 'Region', 'Expiration', 'Faction');
     auctions.forEach(auction => {
         let bid = auction.bid.toString();
         let buy = auction.buyout.toString();
