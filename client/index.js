@@ -4,6 +4,7 @@ let typingInterval = 1000;
 let timer;
 
 input.addEventListener('keypress', async () => {
+    statusText("Typing...");
     clearInterval(timer);
     timer = setTimeout(doneTyping, typingInterval)
 })
@@ -32,7 +33,10 @@ let gold = (value) => {
     return `${gold}g`;
 }
 
+let statusText = (text) => document.getElementById('status').innerHTML = text;
+
 let doneTyping = async () => {
+    statusText("Searching...");
     // Search for the item
     let search = input.value;
     let results = (await fetch(host + search));
@@ -55,4 +59,5 @@ let doneTyping = async () => {
             expirations[auction.expiration],
             auction.faction);
     });
+    statusText("Enter your Query");
 }

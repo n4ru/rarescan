@@ -124,7 +124,8 @@ const update = async () => {
                     factions[idx].name.includes('Horde') ? 'Horde'
                         : factions[idx].name.includes('Alliance') ? 'Alliance'
                             : 'Neutral'
-                const auctions = (await api.getAuctions(region, realm.id, faction)).auctions;
+                let auctions = (await api.getAuctions(region, realm.id, faction));
+                auctions = (typeof auctions.auctions !== "undefined" ? auctions.auctions : []);
                 console.log(`Processing ${auctions.length} auctions for ${realm.name.en_US} (${factionName})`);
                 const allAuctions = [];
                 for (idx in auctions) { // Iterate auctions
@@ -158,6 +159,8 @@ const update = async () => {
 
         }
     }
+    
+    console.log(`Done!`);
 }
 
 const main = async () => {
