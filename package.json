@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/n4ru/rarescan#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "fluidb": "^0.3.0",
     "sequelize": "^6.26.0",
     "sqlite3": "^5.1.2"

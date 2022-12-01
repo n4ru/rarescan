@@ -1,5 +1,5 @@
 {
-    "token": "token_here",
+    "token": "TOKEN",
     "regions": [
         "us",
         "eu"
@@ -7,198 +7,246 @@
     "base": "api.blizzard.com/data/wow",
     "realms": {
         "us": {
-            "atiesh": {
+            "4372": {
                 "id": 4372,
+                "slug": "atiesh",
                 "name": "Atiesh"
             },
-            "myzrael": {
+            "4373": {
                 "id": 4373,
+                "slug": "myzrael",
                 "name": "Myzrael"
             },
-            "old-blanchy": {
+            "4374": {
                 "id": 4374,
+                "slug": "old-blanchy",
                 "name": "Old Blanchy"
             },
-            "azuresong": {
+            "4376": {
                 "id": 4376,
+                "slug": "azuresong",
                 "name": "Azuresong"
             },
-            "mankrik": {
+            "4384": {
                 "id": 4384,
+                "slug": "mankrik",
                 "name": "Mankrik"
             },
-            "pagle": {
+            "4385": {
                 "id": 4385,
+                "slug": "pagle",
                 "name": "Pagle"
             },
-            "ashkandi": {
+            "4387": {
                 "id": 4387,
+                "slug": "ashkandi",
                 "name": "Ashkandi"
             },
-            "westfall": {
+            "4388": {
                 "id": 4388,
+                "slug": "westfall",
                 "name": "Westfall"
             },
-            "whitemane": {
+            "4395": {
                 "id": 4395,
+                "slug": "whitemane",
                 "name": "Whitemane"
             },
-            "faerlina": {
+            "4408": {
                 "id": 4408,
+                "slug": "faerlina",
                 "name": "Faerlina"
             },
-            "grobbulus": {
+            "4647": {
                 "id": 4647,
+                "slug": "grobbulus",
                 "name": "Grobbulus"
             },
-            "bloodsail-buccaneers": {
+            "4648": {
                 "id": 4648,
+                "slug": "bloodsail-buccaneers",
                 "name": "Bloodsail Buccaneers"
             },
-            "remulos": {
+            "4667": {
                 "id": 4667,
+                "slug": "remulos",
                 "name": "Remulos"
             },
-            "arugal": {
+            "4669": {
                 "id": 4669,
+                "slug": "arugal",
                 "name": "Arugal"
             },
-            "yojamba": {
+            "4670": {
                 "id": 4670,
+                "slug": "yojamba",
                 "name": "Yojamba"
             },
-            "skyfury": {
+            "4725": {
                 "id": 4725,
+                "slug": "skyfury",
                 "name": "Skyfury"
             },
-            "sulfuras": {
+            "4726": {
                 "id": 4726,
+                "slug": "sulfuras",
                 "name": "Sulfuras"
             },
-            "windseeker": {
+            "4727": {
                 "id": 4727,
+                "slug": "windseeker",
                 "name": "Windseeker"
             },
-            "benediction": {
+            "4728": {
                 "id": 4728,
+                "slug": "benediction",
                 "name": "Benediction"
             },
-            "earthfury": {
+            "4731": {
                 "id": 4731,
+                "slug": "earthfury",
                 "name": "Earthfury"
             },
-            "maladath": {
+            "4738": {
                 "id": 4738,
+                "slug": "maladath",
                 "name": "Maladath"
             },
-            "angerforge": {
+            "4795": {
                 "id": 4795,
+                "slug": "angerforge",
                 "name": "Angerforge"
             },
-            "eranikus": {
+            "4800": {
                 "id": 4800,
+                "slug": "eranikus",
                 "name": "Eranikus"
             }
         },
         "eu": {
-            "everlook": {
+            "4440": {
                 "id": 4440,
+                "slug": "everlook",
                 "name": "Everlook"
             },
-            "auberdine": {
+            "4441": {
                 "id": 4441,
+                "slug": "auberdine",
                 "name": "Auberdine"
             },
-            "lakeshire": {
+            "4442": {
                 "id": 4442,
+                "slug": "lakeshire",
                 "name": "Lakeshire"
             },
-            "chromie": {
+            "4452": {
                 "id": 4452,
+                "slug": "chromie",
                 "name": "Chromie"
             },
-            "pyrewood-village": {
+            "4453": {
                 "id": 4453,
+                "slug": "pyrewood-village",
                 "name": "Pyrewood Village"
             },
-            "mirage-raceway": {
+            "4454": {
                 "id": 4454,
+                "slug": "mirage-raceway",
                 "name": "Mirage Raceway"
             },
-            "razorfen": {
+            "4455": {
                 "id": 4455,
+                "slug": "razorfen",
                 "name": "Razorfen"
             },
-            "nethergarde-keep": {
+            "4456": {
                 "id": 4456,
+                "slug": "nethergarde-keep",
                 "name": "Nethergarde Keep"
             },
-            "sulfuron": {
+            "4464": {
                 "id": 4464,
+                "slug": "sulfuron",
                 "name": "Sulfuron"
             },
-            "golemagg": {
+            "4465": {
                 "id": 4465,
+                "slug": "golemagg",
                 "name": "Golemagg"
             },
-            "patchwerk": {
+            "4466": {
                 "id": 4466,
+                "slug": "patchwerk",
                 "name": "Patchwerk"
             },
-            "firemaw": {
+            "4467": {
                 "id": 4467,
+                "slug": "firemaw",
                 "name": "Firemaw"
             },
-            "flamegor": {
+            "4474": {
                 "id": 4474,
+                "slug": "flamegor",
                 "name": "Flamegor"
             },
-            "gehennas": {
+            "4476": {
                 "id": 4476,
+                "slug": "gehennas",
                 "name": "Gehennas"
             },
-            "venoxis": {
+            "4477": {
                 "id": 4477,
+                "slug": "venoxis",
                 "name": "Venoxis"
             },
-            "hydraxian-waterlords": {
+            "4678": {
                 "id": 4678,
+                "slug": "hydraxian-waterlords",
                 "name": "Hydraxian Waterlords"
             },
-            "mograine": {
+            "4701": {
                 "id": 4701,
+                "slug": "mograine",
                 "name": "Mograine"
             },
-            "amnennar": {
+            "4703": {
                 "id": 4703,
+                "slug": "amnennar",
                 "name": "Amnennar"
             },
-            "ashbringer": {
+            "4742": {
                 "id": 4742,
+                "slug": "ashbringer",
                 "name": "Ashbringer"
             },
-            "transcendence": {
+            "4745": {
                 "id": 4745,
+                "slug": "transcendence",
                 "name": "Transcendence"
             },
-            "earthshaker": {
+            "4749": {
                 "id": 4749,
+                "slug": "earthshaker",
                 "name": "Earthshaker"
             },
-            "giantstalker": {
+            "4811": {
                 "id": 4811,
+                "slug": "giantstalker",
                 "name": "Giantstalker"
             },
-            "mandokir": {
+            "4813": {
                 "id": 4813,
+                "slug": "mandokir",
                 "name": "Mandokir"
             },
-            "thekal": {
+            "4815": {
                 "id": 4815,
+                "slug": "thekal",
                 "name": "Thekal"
             },
-            "jindo": {
+            "4816": {
                 "id": 4816,
+                "slug": "jindo",
                 "name": "Jin'do"
             }
         }
