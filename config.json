@@ -1,5 +1,6 @@
 {
-    "token": "TOKEN",
+    "key": "clientId",
+    "secret": "clientSecret",
     "limit": 100,
     "regions": [
         "us"
@@ -124,5 +125,7 @@
             }
         }
     },
-    "lastscan": 1669885440506
+    "token": "UScm0WWiJlufG4LFkQbKJBKP6MgTHwAIhz",
+    "expires": 1670055235399,
+    "lastscan": 1669968836782
 }

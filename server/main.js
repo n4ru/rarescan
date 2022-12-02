@@ -2,12 +2,25 @@ const fluidb = require('fluidb');
 const config = new fluidb('../config');
 const { Sequelize, Model, DataTypes } = require('sequelize');
 const fs = require('fs');
+const express = require('express');
+const app = express();
+const cors = require('cors');
+const path = require('path');
 
 const seq = new Sequelize({ dialect: 'sqlite', storage: 'db.sqlite', logging: false });
 
-let auctionTable, itemsTable, randsTable;
+let auctionTable, itemsTable, randsTable, token;
 
-const { regions, base, token } = config;
+const options = {
+    method: 'post',
+    headers: {
+        'Authorization': 'Basic ' + Buffer.from(config.key + ":" + config.secret).toString('base64'),
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+    body: new URLSearchParams({ grant_type: 'client_credentials' })
+}
+
+const { regions, base } = config;
 const api = {
     getRealms: async (region) => {
         return (await fetch(`https://${region}.${base}/search/connected-realm?namespace=dynamic-classic-${region}&orderby=id&status.type=UP&_page=1&access_token=${token}`)).json();
@@ -21,6 +34,8 @@ const api = {
 }
 
 const setup = async () => {
+
+    await getToken();
     await seq.authenticate(); // Test connection
     console.log('Connection has been established successfully. Importing base data...');
     auctionTable = seq.define('auctions', {
@@ -91,6 +106,7 @@ const setup = async () => {
 
 const update = async () => {
 
+    await getToken();
 
     for (idx in regions) { // Iterate regions
         let region = regions[idx];
@@ -159,16 +175,73 @@ const update = async () => {
 
         }
     }
-    
+
     console.log(`Done!`);
 }
 
+
+const router = async (port) => {
+
+    app.get('/search', cors(), async (req, res) => {
+        let search = req.query.name;
+        let results = await auctionTable.findAll({ where: { name: { [Sequelize.Op.substring]: search } }, raw: true });
+        results = results.map(item => {
+            return {
+                item: item.item_id,
+                rand: item.rand_id,
+                name: item.name,
+                bid: item.bid,
+                buyout: item.buyout,
+                qty: item.qty,
+                realm: config.realms[item.region][item.realm].name,
+                expiration: item.expiration,
+                faction: item.faction,
+                region: item.region
+            }
+        })
+            .sort((a, b) => { return a.buyout - b.buyout });
+        if (results.length > config.limit) results = [];
+        res.json({ auctions: results });
+    });
+
+    app.listen(port, () => {
+        console.log(`API listening on ${port}`);
+    });
+
+    app.get('/', async (req, res) => {
+        // Serve client folder
+        res.sendFile(path.join(__dirname, '../client/index.html'));
+    })
+
+    // Serve client js in ./client/index.js
+    app.get('/index.js', async (req, res) => {
+        res.sendFile(path.join(__dirname, '../client/index.js'));
+    })
+
+}
+
+const getToken = async () => {
+
+    // Check if our token is still valid
+    if (config.token && config.expires > Date.now()) token = config.token;
+
+    // Get Token from Battle.net using API Key and Secret
+    let tokenRetrieve = await (await fetch('https://us.battle.net/oauth/token', options)).json();
+    config.token = tokenRetrieve.access_token;
+    token = config.token;
+    config.expires = Date.now() + (tokenRetrieve.expires_in * 1000);
+
+}
+
+
 const main = async () => {
 
+    await getToken();
     await setup();
-    await update();
+    router(8081);
+    update();
 
-    // Repeat setup every hour
+    // Update every hour
     setInterval(async () => { await update() }, 3600000);
 
 }
